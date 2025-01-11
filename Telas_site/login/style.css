@@ -1,0 +1,136 @@
+body{
+    margin: 0;   /**/
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #35FF27;
+}
+
+.container{
+    width: 100%; /*Fica 100% da largura*/
+    height: 100vh; /* Fica 100% do tamanho da altura, utilizamos vh porque temos 100% da visualização da página, se colocar em porcentagem fica como % do elemento filho e não da visualização.*/
+    display: flex;
+}
+
+.container .esquerda{
+    width: 50%; /*Fica 100% da largura*/
+    height: 100%; /* Fica 100% do tamanho da altura, utilizamos vh porque temos 100% da visualização da página, se colocar em porcentagem fica como % do elemento filho e não da visualização.*/
+    background-color: #35FF27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .direita{
+    width: 50%; /*Fica 100% da largura*/
+    height: 100%; /* Fica 100% do tamanho da altura, utilizamos vh porque temos 100% da visualização da página, se colocar em porcentagem fica como % do elemento filho e não da visualização.*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50px; /*ou 10%*/
+    border-bottom-left-radius: 50px; /*ou 10%*/
+}
+
+.container .direita .formulario .topo h1{
+    color: #35FF27; /*para mudar cor de letra deve utilizar o color e não o background*/
+    text-transform: uppercase; /*Fica a letra toda para maiscula*/
+    text-align: center; /*centraliza o texto*/
+    font-size: 45 px; /*altera  o texto*/
+}
+
+.container .direita .formulario .meio{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .direita .formulario .meio .campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .direita .formulario .meio .campo input{
+    border: none;
+    background-color: #e3e3e3c0;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+
+}
+
+.container .direita .formulario .meio .campo label{
+    font-weight: bold;
+
+}
+
+
+.container .direita .formulario{
+    width: 60%;
+}
+
+.container .direita .formulario .meio .links-ajuda{
+    display: flex;
+    justify-content: space-between;
+    }
+
+.container .direita .formulario .fim{
+    margin-top: 20px;
+    width: 100%;
+    }
+
+.container .direita .formulario .fim button{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #35FF27;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.container .direita .formulario .fim .aux-conta{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 1024px){      /* Para mudar a estrutura no dimensionamento*/
+    .container{
+        flex-direction: column;
+    }
+
+    .container .direita{
+        width: 100%;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .container .esquerda{
+        width: 100%;
+    }
+
+    .container .esquerda img{
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 390px){
+    .container .esquerda{
+        display: none;
+    }
+
+    .container .direita{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .container .direita .formulario{
+        width: 80%;
+    }
+
+}

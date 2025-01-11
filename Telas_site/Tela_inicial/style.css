@@ -1,0 +1,146 @@
+body{
+    margin: 30px;       /* Espaçamento nas bordas de fora, o conteúdo se ajusta  */
+    padding: 0;      /* Espaçamento nas bordas de dentro, o conteúdo se ajusta  */
+    font-family: "Arial", sans-serif;
+    background-color: #ECF0F1;
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;   /* utilização de estilização de orientação */
+    border-radius: 30px;
+}
+
+.container .esquerda{
+    width: 40%;    /* Comprimento */
+    height: 100%;  /* altura */
+    background-color: #58AF9C;  /* cor do fundo */
+    color: white;  /* cor de todas as letras */
+
+    display: flex; /* Para alinhamento de todos os elementos*/
+    flex-direction: column; /* alinha por coluna*/
+    align-items: center;   /* alinha os objetos pelo centro - Eixo (X)*/
+    justify-content: center; /* alinha os objetos pelo centro - Eixo (y)*/
+    border-radius: 10px 0px;
+}
+
+.container .esquerda h1{    /* aqui só utiliza o h1 pq ele é uma tag simples e não uma div*/
+    font-size: 40px;
+}
+
+.container .esquerda p{    /* aqui só utiliza o h1 pq ele é uma tag simples e não uma div*/
+    font-weight: 100;
+}
+
+.container .esquerda button{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.container .direita {
+    border-radius: 10px;
+    width: 60%;    /* Comprimento */
+    height: 100%;  /* altura */
+    background-color: white;  /* cor do fundo */
+    
+    display: flex; /* Para alinhamento de todos os elementos*/
+    flex-direction: column; /* alinha por coluna*/
+    align-items: center;   /* alinha os objetos pelo centro - Eixo (X)*/
+    justify-content: center; /* alinha os objetos pelo centro - Eixo (y)*/
+    border-radius: 0px 10px;
+}
+
+.container .direita .formulario{
+    display: flex; /* Para alinhamento de todos os elementos*/
+    flex-direction: column; /* alinha por coluna*/
+    align-items: center;   /* alinha os objetos pelo centro - Eixo (X)*/
+    justify-content: center; /* alinha os objetos pelo centro - Eixo (y)*/ 
+}
+
+.container .direita .formulario .topo h1 {
+    font-size: 36px; /*Tamanho do texto*/
+    color: #57AE9D;  /*Mudança de Cor*/
+}
+
+.container .direita .redes-sociais{
+    display: flex; /* Para alinhamento de todos os elementos*/
+    flex-direction: row; /* alinha por coluna*/
+    align-items: center;   /* alinha os objetos pelo centro - Eixo (X)*/
+    justify-content: center; /* alinha os objetos pelo centro - Eixo (y)*/     
+}
+
+.container .direita .redes-sociais .icone{
+    margin: 4%;
+    padding: 5%;
+    font-size: 20px; /* No fontawese a mudança do tamanho da imagem será no font-size (y)*/
+    border: 1px solid #cecece;
+    display: flex; /* Para alinhamento de todos os elementos*/
+    align-items: center;   /* alinha os objetos pelo centro - Eixo (X)*/
+    justify-content: center; /* alinha os objetos pelo centro - Eixo (y)*/ 
+    border-radius: 50%;
+    }
+
+.container .direita .redes-sociais .topo .icone{
+    border: 1px solid #cecece;
+    display: flex; /* Para alinhamento de todos os elementos*/
+    flex-direction: column;
+    align-items: center;   /* alinha os objetos pelo centro - Eixo (X)*/
+    justify-content: center; /* alinha os objetos pelo centro - Eixo (y)*/ 
+    border-radius: 50%;
+    }
+
+.direita .formulario .topo p{
+    font-size: 15px;
+    color: #C6C6C6;
+    display: flex; /* Para alinhamento de todos os elementos*/
+    flex-direction: row; /* alinha por coluna*/
+    align-items: center;   /* alinha os objetos pelo centro - Eixo (X)*/
+    justify-content: center; /* alinha os objetos pelo centro - Eixo (y)*/ 
+}
+
+.direita .formulario .meio{
+    display: flex; /* Para alinhamento de todos os elementos*/
+    flex-direction: column; /* alinha por coluna*/
+    align-items: center;   /* alinha os objetos pelo centro - Eixo (X)*/
+    justify-content: center; /* alinha os objetos pelo centro - Eixo (y)*/ 
+    gap: 10px; /* Gera o espaçamento entre os elementos da div*/ 
+}
+
+.direita .formulario .fim button{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    background-color: #58AF9C;
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: flex; /* Para alinhamento de todos os elementos*/
+    flex-direction: column; /* alinha por coluna*/
+    align-items: center;   /* alinha os objetos pelo centro - Eixo (X)*/
+    justify-content: center; /* alinha os objetos pelo centro - Eixo (y)*/ 
+    margin: 30px; 
+}
+
+.direita .formulario .meio{
+    display: flex; /* Para alinhamento de todos os elementos*/
+    flex-direction: column; /* alinha por coluna*/
+    align-items: center;   /* alinha os objetos pelo centro - Eixo (X)*/
+    justify-content: center; /* alinha os objetos pelo centro - Eixo (y)*/ 
+    gap: 15px;
+    
+}
+
+.direita .formulario .meio input{
+    background-color: #C6C6C6;
+    border: 1px solid #C6C6C6;
+}
+
+.direita .formulario .meio .campo{
+border: 4px solid #C6C6C6;
+background-color: #C6C6C6;
+border-radius: 5px;
+}
+

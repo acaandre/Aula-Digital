@@ -1,0 +1,62 @@
+No HTML existe tags representado pelos sinais:  <tag> </tag>
+
+Existe diversas tags: como body, div, main, etc. 
+
+Lembre de sempre fechar uma Tag assim: <div> (abertura)     (será executado)       </div> (Fechamento)
+
+h1 - tag de título
+P - tag de paragrafo de texto
+
+no HTML temos as tag pai e filho. Obedecendo a hierarquia
+
+<div> (Pai)
+    <h1>     </h1> (Filho)
+    
+    <p>       </p>  (Filho)
+
+</div>
+
+Para utilizar elementos diferentes no html utilize o site: https://fontawesome.com/
+
+Clique no Start for free.
+
+Clique no Explore Icons.
+
+Pesquise o icone.
+
+Escolha seu o icone
+
+Copie o no html para o código. 
+
+Entra no google cdnjs font awesome (https://cdnjs.com/libraries/font-awesome)
+
+Entra no primeiro site. E pega o primeiro link. E cola o primeiro link. 
+
+e puxe cada item.
+
+Aula 02 
+
+display: "flex"
+
+Ele orienta todas as div ou tags para um do lado do outro.
+
+display: "flex-direction: row (linha) ou collumn (coluna)"
+Ele orienta todas as div ou tags nesta orientação: um do lado do outro.
+
+
+Eixo (Y)
+justify-content: start (Começo da página)
+
+justify-content: center (Centro da Página)
+
+justify-content: End (Final da Página)
+
+justify-content: space-between (cada ícone fica em uma extremidade da Página)
+
+
+
+Eixo (X)
+align-itens: start (Começo da página)
+align-itens: center (Centro da Página)
+align-itens: End (Final da Página)
+

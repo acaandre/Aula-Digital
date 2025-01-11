@@ -1,0 +1,168 @@
+body{ /*Não precisa do . pq é uma tag semantica*/
+    margin: 0; /*Sem espaçamento externo*/
+    padding: 0; /*Sem espaçamento interno*/
+    font-family: Arial, Helvetica, sans-serif; /*Fonte Padrão das letras*/
+
+}
+
+a { 
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{ /*Precisa do . pq é uma div class*/
+    width: 100%;
+    height: 100vh;
+}
+
+.container .navegacao .logo img{
+    width: 50px;
+}
+
+.container .navegacao{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px; /*Primeiro vertical depois horizontal*/
+}
+
+.container .navegacao .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .navegacao .links{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.container .navegacao .links nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+.container .navegacao .links button{
+    border: none;
+    background-color: transparent;
+    margin-right: 40px;
+}
+
+.container .navegacao .links button i{
+    font-size: 20px;
+}
+
+.container main{
+    display: flex;
+    height: 80%;
+    width: 100%;
+}
+
+.container main .esquerda{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container main .direita{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container main .direita .secao-1 span{
+    background-color: #58AF9C;
+    padding: 10px 5px;
+    border-radius: 50px;
+    color: white;
+}
+
+.container main .direita .secao-2 .botoes{
+    display: flex;
+    gap: 10px;
+    transition: all 900ms ease;
+
+}
+
+.container main .direita .secao-2 .botoes .secundario{    /* Quando eu utilizar ID, você para estilizar é só chamar o jogo da velha e o nome do id que ele já referencia.*/
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+.container main .direita .secao-2 .botoes .secundario:hover{
+    border: 1px solid #20816c;   
+}
+
+.container main .direita .secao-2 .botoes .secundario a{
+    color: #20816c;   
+}
+
+.container main .direita .secao-2 .botoes .botao{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Quando utilizar uma subclasse, você precisa referenciar o caminho*/
+.container main .direita .secao-2 .botoes .primario{
+    border: none; 
+    background-color: #58AF9C;
+    transition: all 500ms ease;
+    /* transition para fazer a transição do hover mais suave*/
+}
+
+.container main .direita .secao-2 .botoes .primario:hover{
+    border: none; 
+    background-color: #20816c;
+}
+
+
+.container main .direita .secao-2 .botoes .primario a{
+    color: white;
+}
+
+.container main .esquerda img{
+    width: 70%;
+    display: flex;
+    align-items: center;
+
+}
+
+.container footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.container footer .esquerda{
+    width: 50%;
+}
+
+.container footer .direita{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    }
+
+.container footer .direita .redes-sociais{
+        display: flex;
+        gap: 10px;
+    }
+
+.container footer .direita .redes-sociais i{
+    font-size: 30px;
+}
+
+/* se tiver a classe secundária - .container main .direita .secao-2 .botoes .secundario*/
