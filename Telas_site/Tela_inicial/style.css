@@ -144,3 +144,29 @@ background-color: #C6C6C6;
 border-radius: 5px;
 }
 
+@media (max-width: 1200px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .container .direita{
+        width: 100%;
+    }
+
+    .container .esquerda{
+        width: 100%;
+    }
+}
+
+@media (max-width: 470px){
+    .container .esquerda{
+        display: none;
+    }
+}
+@media (max-width: 320px){
+    h1{
+    position: relative;
+    left: 50px;
+    }
+}
+
