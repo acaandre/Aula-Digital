@@ -233,3 +233,27 @@ a{
     p{
         line-height: 0;
     }
+
+    main .table-user table {
+       width: 100%;
+       text-align: center; 
+       /* text-align centraliza o texto */
+        border-collapse: collapse;
+    }
+
+    main .table-user table th,
+    main .table-user table td{
+        /* border: 1px solid black; */
+        padding: 16px;
+        border-bottom: 1px solid #808080;
+        /* 1 en significa 16 px */
+    }
+
+    main .table-user {
+        border: 1px solid #808080;
+        border-radius: 8px;
+    }
+
+    main .table-user table tr:last-child td{
+        border-bottom: none;
+    }
