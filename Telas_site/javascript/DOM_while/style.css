@@ -1,0 +1,19 @@
+body{
+    margin: 0;   /**/
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+.container{
+    width: 100%; /*Fica 100% da largura*/
+    height: 100vh; /* Fica 100% do tamanho da altura, utilizamos vh porque temos 100% da visualização da página, se colocar em porcentagem fica como % do elemento filho e não da visualização.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    size: 500px;
+}
