@@ -3,14 +3,14 @@
 <head>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-main">
         <div class="esquerda">
-            <img src="imagens/sign-up-animate.svg" alt="imagem ilustrativa">
+            <img src="imagens/sign-up-animate.svg" alt="">
         </div>
         <div class="direita">
             <div class="formulario">
@@ -21,31 +21,32 @@
                     <div class="campo">
                         <label for="email">E-mail</label>
                         <input type="email" name="email" id="email">
-                        <p class="text-red-500 text-sm hidden">Email é obrigatório</p>
+                        <p id="error-email" class="text-red-500 text-sm hidden">E-mail é obrigatório.</p>
                     </div>
                     <div class="campo">
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" id="senha">
-                        <p class="text-red-500 text-sm hidden">Senha é obrigatório</p>
+                        <p id="error-password" class="text-red-500 text-sm hidden">Senha é obrigatória.</p>
                     </div>
                     <div class="links-ajuda">
                         <div class="inputs">
                             <input type="checkbox" name="lembrar" id="lembrar">
                             <label for="lembrar">Lembrar-me</label>
                         </div>
-                        <a href="">Esqueci a senha</a>
+                        <a href="">Esqueci a Senha</a>
                     </div>
                 </div>
                 <div class="fim">
-                   <button onclick="login()">Entrar</button>
-                   <div class="aux-conta">
-                    <p>Não tem uma conta?</p>
-                    <a href="">Cadastre-se</a>
-                   </div>
+                    <button onclick="login()">entrar</button>
+                    <div class="aux-conta">
+                        <p>Não tem um conta?</p>
+                        <a href="">Cadastre-se</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

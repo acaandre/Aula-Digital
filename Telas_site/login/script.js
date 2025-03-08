@@ -8,14 +8,32 @@
 let emailInput = document.getElementById("email");
 let senhaInput = document.getElementById("senha");
 
-function login(){
-    console.log("Fazendo Login");
+let erroremail = document.getElementById("error-email");
+let errorPassword = document.getElementById("error-password");
 
-    if(emailInput.value === "" || senhaInput.value === ""){
-        alert("Preencha o seu email ou senha");
-    } else{
-        console.log(emailInput.value);
-        console.log(senhaInput.value);
-    }
+function login(){
+    let email = emailInput.value;
+    let senha = senhaInput.value;
+
+   if( email === "" || senha === ""){
+    if(email === ""){
+        erroremail.classList.remove("hidden");
+    } else if (senha === ""){
+        errorPassword.classList.remove("hidden");
+    } 
+   } 
+   else{
+    erroremail.classList.add("hidden");
+    errorPassword.classList.add("hidden");
+    }   
 }
 
+// errorPassword = document.querySelector() - Busca qualquer elemento
+
+
+// if(emailInput.value === "" || ){
+    //     alert("Preencha o seu email ou senha");
+    // } else{
+    //     console.log(emailInput.value);
+    //     console.log(senhaInput.value);
+    // }
