@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Arrays</title>
 </head>
 <body>
+    <main>
+        <div class="container">
+                <div class="formulario">
+                    <div class="topo">
+                        <h1>Biblioteca</h1>
+                        
+                        <p>Or use your email for registration</p>
+                    </div>
+                    <div class="meio">
+                        <div class="campo">
+                            <i class="fa-regular fa-user"></i>
+                            <input id="nome" type="text" placeholder="Nome">
+                        </div>
+                        <div class="campo">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input id="dataemprestimo" type="date" placeholder="data">
+                        </div>
+                        <div class="campo">
+                            <i class="fa-solid fa-lock"></i>
+                            <input id="serie" type="number" placeholder="serie">
+                        </div>
+                    </div>
+                    <div class="fim">
+                        <button onclick="livro.emprestado()">Emprestimo</button>
+                    </div>
+                </div>
+            
+        </div>
+    </main>
     
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="object.js"></script> -->
+    <!-- <script src="fetch.js"></script> -->
+     <script src="objectlivro.js"></script>
 </body>
 </html>
