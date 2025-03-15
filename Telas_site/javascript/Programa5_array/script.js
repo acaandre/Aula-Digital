@@ -116,3 +116,79 @@ let numeros2 = [1,2,3,4,5];
 const numerosMap = numeros2.map( (numero) => { return numero * 2 } ) ;
 
 console.log (numerosMap)
+
+//Arrow Function ou Função Anônina, Função dentro de outra função - () => {}
+
+// Filter (Filtrar os elementos do array)
+// Filtre as frutaas que tenham o tamanho acima de 4 caracteres
+
+let Frutas10 = ["maça", "banana", "laranja", "manga", "morango"];
+
+let frutasFiltradas = Frutas10.filter((fruta) => {
+    return fruta.length > 5;
+})
+
+console.log(frutasFiltradas);
+
+// Find ( Encontra um elemento em array)
+// Encontre uma fruta com a letra "a"
+
+let Frutas11 = ["maça", "banana", "laranja", "manga", "morango", "abacaxi"];
+
+let frutasEncontrada = Frutas11.find((fruta) => {
+    return fruta[0] === "a";
+})
+
+let frutasEncontrada2 = Frutas11.find((fruta) => {
+    return fruta === "morango";
+})
+
+console.log(frutasEncontrada2);
+ //fruta.replace = iria demonstrar quantos caracteres tem cada fruta.
+
+console.log(frutasEncontrada);
+
+
+// reduce() - Reduz o array a um único valor
+// reduzir o array a um único valor
+
+const pagamentos = [4000, 2000, 5000, 1000];
+
+// soma todos os pagamentos
+
+const pagamentoTotal = pagamentos.reduce((acumulador, atual)=>{
+    return acumulador + atual;
+}, 0)
+
+console.log(pagamentoTotal)
+
+// Exercicios
+// 1. Crie uma lista com 5 nomes dos alunos da turma e adicione um novo aluno no final da lista.
+
+alunosDigital = ["André", "Daniel", "Bruno", "Jessica", "Gabriel"];
+
+// Adiciona mais um elemento no array, bem no final.
+alunosDigital.push("Menires");
+
+console.log(alunosDigital);
+
+// 2. Remova o último aluno da lista.
+
+// Tira o último do array
+alunosDigital.pop();
+
+console.log(alunosDigital);
+
+// 3. Crie uma lista com numeros acima de 10
+const numeros10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+const arrays10 = numeros10.filter((numeros)=>{return numeros > 10})
+
+console.log(arrays10)
+
+// 4. Use o Metodo map para dobrar os valores da lista de numeros acima
+
+
+const numerosDobrar = numeros10.map( (numero) => { return numero *2 } ) 
+
+console.log(numerosDobrar);
